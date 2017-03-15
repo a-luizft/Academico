@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+		
+<html>
+
+
+	<head> <meta charset= “utf-8”> 
+			<link rel="stylesheet" type="text/css" href="../css/academico.css">
+			
+
+		
+			<title> Emitir Comprovante Matricula</title>
+		
+			<script src="../js/jquery.js" type="text/javascript"></script>
+			<script src="../js/jquery.maskedinput.js" type="text/javascript"></script>
+			<script src="../js/mascaras.js" type="text/javascript"></script>
+			<script src="../js/validacao.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body> <script type="text/javascript" src="java.js"></script>
+			
+		<img src="../logo.png" alt="logo">
+		
+		<nav>
+				<ul class="menu">
+					<li> <a href="../index.html" style="color: white"> Home </a></li>
+					<li> <a href="#" style="color: white">Menu Professor </a>
+						<ul>
+						<li> <a href="../professor/registrar_faltas.html"> Registrar Faltas </a></li>
+						<li> <a href="../professor/registrar_notas.html"> Registrar Notas </a></li>
+						<li> <a href="../professor/cadastrar_projeto_pesquisa.html"> Cadastrar Projeto de Pesquisa </a></li>
+						</ul>
+						</li>
+					<li> <a href="#" style="color: white">Menu Aluno </a>
+						<ul>
+						<li> <a href="../aluno/alterar_dados_pessoais.html"> Alterar Dados Pessoais </a></li>
+						<li> <a href="../aluno/vizualizar_notas_faltas.html"> Vizualizar Notas e Faltas </a></li>
+						<li> <a href="../aluno/emitir_comprovante_matricula.html"> Emitir Comprovante de Matricula </a></li>
+						</ul>
+						</li>
+					<li> <a href="#" style="color: white">Menu Secretaria </a>
+						<ul>
+						<li> <a href="../secretaria/cadastrar_professor.html"> Cadastrar Professor </a></li>
+						<li> <a href="../secretaria/cadastrar_cursos_disciplinas.html"> Cadatsrar Cursos e Disciplinas </a></li>
+						<li> <a href="../secretaria/realizar_matriculas.html"> Realizar Matriculas </a></li>
+						<li> <a href="../secretaria/emitir_historicos.html"> Emitir Históricos </a></li>		
+						</ul>
+						</li>
+					<li> <a href="../help.html" target="_blank" style="color: white"> Ajuda </a> </li>		
+				</ul>		
+			</nav>
+			
+			<h1> Sistema de Gestão Acadêmica - ACAD </h1>
+			
+		<form name="emitirC" method="GET" onsubmit="return validaComprovanteM();">	
+		<fieldset>
+				<legend>Emitir Comprovante de Matricula</legend>
+			
+		<table>	
+		
+		<tr>
+			<div class="campo">
+			
+			<td class="alinha">	
+				<label for="aluno">Aluno(a) *</label> 
+			</td>	
+
+			<td>	
+				<select name="aluno" id="aluno">
+						<option value="">Selecione o Aluno</option>
+						<option value="manuella">Manuella de Britto Soares</option>
+						<option value="maria">Maria Lucielen Ferreira</option>
+						<option value="stephen">Stephen Cobucci</option>
+						<option value="mirian">Mirian Jêmina Neves</option>
+						<option value="joao"> João da Silva</option>
+						<option value="junior">Junior Gerrad</option>
+						<option value="ana">Ana Julia Ferreira Silva</option>
+						<option value="joao">João Gabriel Moura</option>
+						<option value="maria">Maria Luiza Souza</option>
+						<option value="clarice">Clarice da Costa Pinto</option>
+						<option value="matty">Matty Mullins</option>
+				</select>
+			</td>
+			
+			</div>
+		</tr>
+
+		<tr>	
+			<div class="campo">
+				
+			<td class="alinha">	
+				<label>CPF *</label>
+			</td>
+			<td>	
+					<input type="text" name="cpf" id="cpf" maxlength=14>
+			</td>
+			
+			</div>
+		</tr>	
+			
+		<tr>	
+			<div class="campo">
+			
+			<td class="alinha">	
+				<label for="semestre">Semestre *</label>
+			</td>		
+			
+			<td>	
+					<input type="text" name="semestre" id="semestre" maxlength=8>
+			</td>
+			
+			</div>	
+		</tr>	
+			<tr>
+				<div class="campo">
+				<td>	
+					Gerar PDF<input type="radio" name="tipo" id="pdf">
+				</td>
+				<td>	
+					Enviar por Email<input type="radio" name="tipo" id="emaisl">
+				</td
+				</div>
+			</tr>
+		</table>	
+			
+				<button type="submit" name="emitir">Emitir</button>
+					
+			
+		</fieldset>	
+		</form>	
+			
+
+	</body>
+
+
+</html>

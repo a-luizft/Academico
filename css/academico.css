@@ -1,0 +1,250 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
+h1{
+	
+	font-family: 'Indie Flower', bold;
+	font-size: 40px;
+	color: black;
+} 
+	/* o * indica que todos devem receber essa fonte. Font-family define o tipo de fonte.*/
+
+h3{
+	font-family: 'Indie Flower', bold;
+	font-size: 25px;
+	color: black;
+}
+
+fieldset{
+	
+	margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 960px;
+    margin-left: 5px;
+	border-color: black;
+	border-width:2px;
+	font-family: 'Indie Flower', bold;
+	font-size: 20px;
+	color: white;
+	
+	/*Margin define a margem da borda. 
+	Widht o tamanho da borda. 
+	Color cor.*/
+}
+
+
+body{
+	 background-image: url(back2.jpg); /*define a imagem de fundo da pagina*/
+	 background-size: 100%;
+	 background-position: center; /*posiciona a imagem */
+	 background-repeat: no-repeat; /*define se a imagem vai se repetir ou não*/
+	 background-attachment: fixed; /*deixa a imagem de fundo fixada na pagina*/
+	 
+}
+
+a, ol, ul{
+	
+	color: white;;
+			/* define as cores das tags a, ol e ul.*/
+	
+}
+
+
+ a {
+    text-decoration: none;
+	/* define se o link ai ser sublinhado ou não.*/
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+	
+	/* hover define a cor(color) do link quando passa o mouse me cima*/
+}
+a:active {
+    color: blue;
+	/*define a cor quando o link for clicado*/
+}
+
+
+.alinha{
+	
+	text-align: right;
+}
+
+.campo label {
+    margin-bottom: 1em; /*espaçamento entre os nomes*/
+	font-size:18px; /* tamanho da fonte*/
+	color:white; /*cor da fonte*/
+	
+	
+}
+.campo input[type="text"],
+.campo input[type="date"],
+.campo textarea,
+ select{
+	
+	color: black; /*Cor da fonte*/
+	border: 5px; /*tamanho da linha borda dos campos*/
+    border-style: inset; /*estilo da borda*/
+	margin-bottom: 1em; /*espaçamento entre os campos*/
+	border-width:2px; /*tamanho da borda*/
+	
+}
+
+
+.campo input[type="text"]:focus, textarea:focus{
+	
+	 background-color: #FFC;
+	 /*deixa um cor de focuus no fundo*/
+}
+
+textarea{
+	
+    width: 80%; /*tamanho do campo*/
+    height: 100x; /*largura do campo*/
+    resize: none; /*define se o usuário pode alterar o tamanho do campo*/
+}
+
+
+select {
+    width: 100%; /*largura do campo*/
+}
+
+ #telefone{
+	width:25%; 
+ }
+
+#notas, #faltas{
+	width:10%;
+	/*largura do campo para as ids*/
+}
+#nascimento, #matricula, #semestre, #email{
+	width:50%;
+	/*largura do campo para as ids*/
+}
+#cpf, #cep,  #sexo{
+	width:80%;
+	/*largura do campo para as ids*/
+}
+
+.campo input[type="radio"],
+.campo input[type="checkbox"]{
+	
+	 margin-bottom: 1em; /* espaçamento entre os imputs*/
+	 
+}
+
+button {
+    font-size: 0.8em; /*tamanho da fonte do botão*/
+    background: white; /*cor do fundo do botão*/
+    border: 1;  /*tamanho da borda do botão*/
+    margin-bottom: 1em; /*espaçameto*/
+    color: black; /*cor do texto do botão*/
+	
+}
+
+button:hover {
+    background-color: black; /*cor do fundo ao passar o mouse */
+    color: white; /*cor do texto*/
+}
+
+
+
+.menu{
+	list-style:none; /*tipo de lista*/
+	border:1px solid #fff; /*tamanho e cor*/
+	float:center; /*posição na pagina*/
+	margin-bottom: 5em; /*espaçamento*/
+	width:755px;
+	color: white;
+	}
+
+
+.menu li{
+		position:relative; /*posição caso interaja com outros componentes*/
+		float:left; /*posição*/
+		border-right:1px solid #c0c0c0; /*tamanho da borda e cor*/ 
+		width:150px;
+		font-size: 18px;
+		  
+		
+		}
+
+.menu li a{
+	color: black; /*cor do link da lista*/
+	text-decoration:none; /*não está sublinhado*/
+	padding:5px 10px; /*tamanho*/
+	display:block; /*display um abaixo do outro*/
+	}
+
+.menu li a:hover{
+	background:#333; /* cor do link ao passar o mouse*/
+	color:#fff; /*cor do teto*/
+	-moz-box-shadow:0 3px 10px 0 #CCC;  
+	-webkit-box-shadow:0 3px 10px 0 #ccc; 
+	text-shadow:0px 0px 5px #fff; /* sombra do texto*/ 
+	}
+
+.menu li   ul{
+	position:absolute; 
+	top:25px; 
+	left:0; 
+	background-color:white; 
+	display:none; }
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{
+	border:1px solid #c0c0c0; 
+	display:block; 
+	width:300px;
+	}
+	
+
+
+
+/* Slideshow container */
+.slideshow-container {
+	  max-width: 1000px;
+	  position: relative;
+	  margin-left: ;
+	  margin-top: 60px;
+		
+}
+
+
+
+/* Number text (1/3 etc) */
+.numero {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 1.5s;
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	  
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
