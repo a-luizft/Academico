@@ -1,2 +1,2 @@
 # black
-André Luiz Ferreira da Trindade
+André da Trindade
